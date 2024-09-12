@@ -12,7 +12,7 @@ Feature: Login sur le site OrangeHRM
 
   Scenario: Login avec mot de passe correct et non d utilisateur incorrect
     Given je me rends sur le lien "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-    When je saisis le nom d uilisateur "Admin_incorrect"
+    When je saisis le nom d uilisateur "Admin"
     And je saisis le mot de passe "admin123"
     And je clique sur le bouton Login
     Then une erreur s affiche
